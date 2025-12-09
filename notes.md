@@ -151,7 +151,7 @@ flowchart TD
     A --> D[Omission]
     A --> E[Byzantine]
 ```
-# Partitioning — Detailed Study Notes
+# Partitioning
 
 Partitioning is a technique used in distributed systems to split a large dataset into smaller pieces that can be stored and processed across multiple nodes, improving scalability, performance, and availability.
 
@@ -198,8 +198,8 @@ Vertical partitioning splits a table by columns.
 
 ```mermaid
 flowchart LR
-    A[Users Table] --> B[Users_Core\n(id, name, email)]
-    A --> C[Users_Metadata\n(id, profile_pic, preferences)]
+    A[Users Table] --> B[Users_Core(id, name, email)]
+    A --> C[Users_Metadata(id, profile_pic, preferences)]
 ```
 
 ---
