@@ -196,10 +196,10 @@ Vertical partitioning splits a table by columns.
 
 ## 2.4 Mermaid Diagram — Vertical Partitioning
 
-```mermaid
+```
 flowchart LR
-    A[Users Table] --> B[Users_Core(id, name, email)]
-    A --> C[Users_Metadata(id, profile_pic, preferences)]
+    A[Users Table] --> B["Users_Core<br/>id<br/>name<br/>email"]
+    A --> C["Users_Metadata<br/>id<br/>profile_pic<br/>preferences"]
 ```
 
 ---
@@ -292,7 +292,7 @@ partition = hash(key) % N
 
 ```mermaid
 flowchart LR
-    K[hash(key)] --> P0[Partition 0]
+    K[hash\(key\)] --> P0[Partition 0]
     K --> P1[Partition 1]
     K --> P2[Partition 2]
 ```
